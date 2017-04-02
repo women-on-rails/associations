@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  total_price_value: 1.5
+  total_price_currency: MyString
+  date_of_arrival: 2017-04-02 20:49:03
+  date_of_departure: 2017-04-02 20:49:03
+
+two:
+  total_price_value: 1.5
+  total_price_currency: MyString
+  date_of_arrival: 2017-04-02 20:49:03
+  date_of_departure: 2017-04-02 20:49:03

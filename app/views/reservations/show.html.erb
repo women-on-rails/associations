@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Total price value:</strong>
+  <%= @reservation.total_price_value %>
+</p>
+
+<p>
+  <strong>Total price currency:</strong>
+  <%= @reservation.total_price_currency %>
+</p>
+
+<p>
+  <strong>Date of arrival:</strong>
+  <%= @reservation.date_of_arrival %>
+</p>
+
+<p>
+  <strong>Date of departure:</strong>
+  <%= @reservation.date_of_departure %>
+</p>
+
+<%= link_to 'Edit', edit_reservation_path(@reservation) %> |
+<%= link_to 'Back', reservations_path %>

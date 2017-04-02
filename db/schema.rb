@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170402175244) do
+ActiveRecord::Schema.define(version: 20170402184903) do
 
   create_table "addresses", force: :cascade do |t|
     t.string   "line_1"
@@ -40,6 +40,15 @@ ActiveRecord::Schema.define(version: 20170402175244) do
     t.text     "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+  end
+
+  create_table "reservations", force: :cascade do |t|
+    t.float    "total_price_value"
+    t.string   "total_price_currency"
+    t.datetime "date_of_arrival"
+    t.datetime "date_of_departure"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
   end
 
   create_table "rooms", force: :cascade do |t|
